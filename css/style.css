@@ -22,7 +22,7 @@ header > hr {
 
 #head {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #logo {
@@ -33,6 +33,7 @@ header > hr {
   line-height: 0;
   letter-spacing: 0.432em;
   text-shadow: 0px 0px 15px #5000FF;
+  text-align: center;
   color: #d22fff;
 }
 
@@ -99,8 +100,3 @@ footer > hr {
   color: #d22fff;
   box-shadow: 0px 0px 15px #5000FF;
 }
-
-
-
-
-
