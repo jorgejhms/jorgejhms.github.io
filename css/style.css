@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 #principal {
-  text-align: justify;
   width: 70%;
 }
 
@@ -80,16 +79,26 @@ h1, h2, h3, h4, h5, h6  {
   height: auto;
 }
 
-
 /* #Content */
+
 #content > #caption {
  font-size: small;
  text-align: center;
 }
 
-#content > p{
+#content > p {
   text-align: justify;
 }
+
+#content > p > time {
+ font-size: 0.8em;
+}
+
+#content > p > strong {
+ color: #d22fff;
+}
+
+/*footer*/
 
 footer > p {
  font-size: small;
