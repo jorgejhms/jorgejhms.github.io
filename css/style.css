@@ -26,7 +26,6 @@ header > hr {
 }
 
 #logo {
-  /* growth: 0; */
   flex-grow: 1;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
@@ -82,4 +81,8 @@ h1  {
   margin-right: auto;
   width: 50%;
   height: auto;
+}
+
+#content > p{
+  text-align: justify;
 }
