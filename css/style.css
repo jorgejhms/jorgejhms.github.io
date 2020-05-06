@@ -50,6 +50,7 @@ a {
   text-decoration: none;
 }
 
+/* Links */
 a:hover {
   color: #14ff00;
   text-shadow: 0px 0px 15px #0ff;
@@ -60,7 +61,7 @@ a:visited {
   color: #d22fff;
   text-decoration: none;
 }
-h1  {
+h1, h2, h3, h4, h5, h6  {
   font-family: Orbitron;
   letter-spacing: 0.095em;
 }
@@ -78,6 +79,7 @@ h1  {
   height: auto;
 }
 
+
 /* #Content */
 #content > #caption {
  font-size: small;
@@ -87,6 +89,17 @@ h1  {
 #content > p{
   text-align: justify;
 }
+
+footer > p {
+ font-size: small;
+}
+
+footer > hr {
+  width: 100%;
+  color: #d22fff;
+  box-shadow: 0px 0px 15px #5000FF;
+}
+
 
 
 
