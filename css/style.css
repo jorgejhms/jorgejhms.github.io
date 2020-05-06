@@ -61,9 +61,15 @@ a:visited {
   color: #d22fff;
   text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6  {
+h1, {
   font-family: Orbitron;
+  font-size: 26px;
   letter-spacing: 0.095em;
+}
+
+h2, h3, h4, h5, h6  {
+  font-family: inherit;
+  letter-spacing: inherit;
 }
 
 p {
