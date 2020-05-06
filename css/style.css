@@ -45,7 +45,6 @@ header > hr {
   flex-wrap: wrap;
 }
 
-
 a {
   color: #14ff00;
   text-decoration: none;
@@ -67,6 +66,18 @@ h1, h2, h3, h4, h5, h6  {
   letter-spacing: 0.095em;
 }
 
+p {
+  text-align: justify;
+}
+
+p > time {
+ font-size: 0.8em;
+}
+
+p > strong {
+ color: #d22fff;
+}
+
 #principal {
   width: 70%;
 }
@@ -84,18 +95,6 @@ h1, h2, h3, h4, h5, h6  {
 #content > #caption {
  font-size: small;
  text-align: center;
-}
-
-#content > p {
-  text-align: justify;
-}
-
-#content > p > time {
- font-size: 0.8em;
-}
-
-#content > p > strong {
- color: #d22fff;
 }
 
 /*footer*/
