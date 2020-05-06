@@ -1,0 +1,85 @@
+body {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #080009;
+  color: #2fceff;
+  font-family: 'Exo 2', sans-serif;
+}
+
+header {
+ padding-left: inherit;
+ padding-right: inherit;
+}
+
+header > hr {
+  width: 80%;
+  color: #d22fff;
+  box-shadow: 0px 0px 15px #5000FF;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  /* growth: 0; */
+  flex-grow: 1;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 0;
+  letter-spacing: 0.432em;
+  text-shadow: 0px 0px 15px #5000FF;
+  color: #d22fff;
+}
+
+#top-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
+a {
+  color: #14ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #14ff00;
+  text-shadow: 0px 0px 15px #0ff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #d22fff;
+  text-decoration: none;
+}
+h1  {
+  font-family: Orbitron;
+  letter-spacing: 0.095em;
+}
+
+#principal {
+  text-align: justify;
+  width: 70%;
+}
+
+#caption {
+ font-size: small;
+ text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
