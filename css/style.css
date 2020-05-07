@@ -37,8 +37,11 @@ header > hr {
   color: #d22fff;
 }
 
+#logo > a {
+  color: #d22fff;
+}
+
 #head > nav {
- display: flex;
  justify-content: space-around;
  flex-grow: 1;
  flex-wrap: wrap;
@@ -46,6 +49,9 @@ header > hr {
 
 #top-menu {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 a {
