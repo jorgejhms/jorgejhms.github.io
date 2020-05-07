@@ -60,6 +60,18 @@ nav {
   flex-wrap: wrap;
 }
 
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: ">";  
+  color: #d22fff; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
 a {
   color: #14ff00;
   text-decoration: none;
