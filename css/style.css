@@ -107,7 +107,7 @@ p > strong {
 
 /* #Content */
 
-#content > #caption {
+#content > .caption {
  font-size: small;
  text-align: center;
 }
