@@ -41,7 +41,13 @@ header > hr {
   color: #d22fff;
 }
 
-#head > nav {
+#logo > a:hover {
+  color: #d22fff;
+  text-decoration: none;
+  text-shadow: 0 0 0;
+}
+
+nav {
  justify-content: space-around;
  flex-grow: 1;
  flex-wrap: wrap;
@@ -93,10 +99,6 @@ p > strong {
  color: #d22fff;
 }
 
-#principal {
-  width: 70%;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -105,9 +107,7 @@ p > strong {
   height: auto;
 }
 
-/* #Content */
-
-#content > .caption {
+.caption {
  font-size: small;
  text-align: center;
 }
