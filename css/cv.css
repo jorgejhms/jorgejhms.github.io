@@ -1,0 +1,137 @@
+/* CSS general */
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  /*! border: solid; */
+  padding: 1em;
+  /*! border-width: 1px; */
+  box-shadow: 0px 0px 20px 5px rgba(128,128,128,0.4);
+  border-color: gray;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.foto {
+  clip-path: circle(50% at center);
+  width:100%;
+  height:auto;
+  padding: 1px;
+  filter: grayscale(100%) contrast(120%);
+}
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /*! grid-column-end: 1em; */
+  grid-column-gap: 1em;
+}
+
+.left_side{
+  padding: 1em;
+  background-color: #2c2057;
+  color: white;
+}
+
+.left_side>hr{
+  color: white
+}
+.left_side>ul {
+  font-weight: 300;
+}
+.right_side{
+  padding:1em;
+  /*! display: grid; */
+  grid-template-rows: repeat (4 auto) 1fr;
+  /*! grid-template-columns: 1fr 2fr; */
+}
+
+.right_side>p{
+  text-align: justify;
+  font-weight: 300;
+}
+
+.right_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1em;
+}
+
+.right_grid >h2{
+  grid-column: span 2;
+}
+
+/*Grid trabajo*/
+
+.trabajo {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: subgrid;
+}
+
+.posicion {
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-weight: ;
+}
+
+.empresa {
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.fecha {
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.descripcion {
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-size: 0.8em;
+  text-align: justify;
+  font-weight: 300;
+}
+
+/* Grid Educación */
+.estudio {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: subgrid;
+}
+
+.curso {
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-weight: ;
+}
+
+.centro_ed {
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-size: 0.8em;
+}

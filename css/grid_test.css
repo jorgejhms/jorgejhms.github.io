@@ -1,0 +1,38 @@
+body {
+ max-width: 900px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.tarjetas {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: auto 1fr auto;
+ grid-column-gap: 1em;
+
+}
+
+.tarjeta{
+ display: grid;
+ border: solid;
+ text-align: center;
+ padding: 15px;
+ grid-template-rows: subgrid;
+ grid-row: span 3;
+ grid-row-gap: 0em;
+}
+
+.titulo_tarjeta {
+font-size: 20px;
+grid-row: span 1;	
+}
+
+.info_tarjeta{
+	grid-row: span 1;
+}
+
+.precio_tarjeta{
+	grid-row: span 1;
+	font-size: 30px;
+	font-style: bold;
+}
