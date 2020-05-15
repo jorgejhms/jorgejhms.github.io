@@ -2,7 +2,9 @@
 body {
   font-family: 'Roboto Slab', serif;
   background-color:antiquewhite;
-
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   display: grid; /* Define el grid */
@@ -21,8 +23,16 @@ h2, h3 {
   text-transform: uppercase;
   color: #e65145;
 }
+main {
+  margin-top: 9em;
+  border-top: 5px solid;
+  width: ;
+}
 
-h2 {
+main > h3 {
+  padding-left: 1em
+}
+.subtitulo > h2 {
   writing-mode: vertical-lr;
   margin:0;
 }
