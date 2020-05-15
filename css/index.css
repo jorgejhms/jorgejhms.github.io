@@ -17,6 +17,17 @@ header {
   margin-top: 7em;  
   width: 600px;
 }
+a {
+  color:#e65145;
+}
+
+a:hover{
+  color:red;
+}
+
+a:visited {
+  color:blueviolet;
+}
 
 h2, h3 {
   font-family: Jost;
@@ -38,7 +49,7 @@ main > h3 {
 }
 
 h3 {
-  color: #e65145;;
+  color: #e65145;
   letter-spacing: 0.150em;
   background-color: black;
 }
@@ -96,6 +107,24 @@ p {
 
 .blog>h3 {
   margin-top: 0;
+}
+
+.blog>h3>a {
+  color: #e65145;
+  text-decoration: none;
+}
+
+.blog>h3>a:hover {
+  text-decoration: underline;
+}
+
+.laboratorio>h3>a {
+  color: #e65145;
+  text-decoration: none;
+}
+
+.laboratorio>h3>a:hover {
+  text-decoration: underline;
 }
 
 .copyright {
