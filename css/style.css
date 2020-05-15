@@ -27,9 +27,6 @@ header {
 a {
   color: #e65145;
 } 
-main {
-
-}
 
 .logo {
   font-family: 'Jost', sans-serif;
@@ -54,7 +51,6 @@ nav {
   font-size: normal;
   text-transform: uppercase;
   margin-top:6em;
-  /*! width: max-content; */
   align-content: right;
   margin-left: 8em;
 }
@@ -62,6 +58,7 @@ nav {
 nav >ul {
   list-style: none;
   text-align: right;
+  text-decoration: none;
 }
 nav>ul>li{
   border-top: 5px solid;
@@ -69,6 +66,16 @@ nav>ul>li{
 }
 nav>ul>li:last-child{
   border-bottom: 5px solid;
+}
+
+nav >ul > li > a {
+  text-decoration: none;
+  color:black;
+}
+
+nav >ul > li > a:hover {
+  text-decoration: none;
+  color:#e65145;
 }
 
 footer {
@@ -90,14 +97,11 @@ article {
 .titulo {
   grid-column: span 3;
   text-align: left;
-  /*! border-top: 5px solid; */
-  /*! border-bottom: 5px solid; */
   font-family: Jost;
   margin-bottom: 1em;
 }
 
 .titulo>h2 {
-  /*! margin-top: 0.5em; */
   color: #e65145;
   background-color:black;
   padding-left: 1em;
