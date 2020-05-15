@@ -26,7 +26,11 @@ header {
 
 a {
   color: #e65145;
-} 
+}
+
+a:hover{
+  color: red;
+}
 
 .logo {
   font-family: 'Jost', sans-serif;
@@ -75,7 +79,7 @@ nav >ul > li > a {
 
 nav >ul > li > a:hover {
   text-decoration: none;
-  color:#e65145;
+  color:red;
 }
 
 footer {
@@ -146,5 +150,19 @@ article {
 }
 
 .contenido>p:first-child{
+  margin-top: 0;
+}
+
+.contenido>img {
+  width: calc(100% - 10px);
+  height: auto;
+  border: 5px solid;
+}
+
+.caption {
+  font-size: small;
+  text-align: center;
+  border-bottom: 5px solid;
+  padding-bottom: 0.5em;
   margin-top: 0;
 }
