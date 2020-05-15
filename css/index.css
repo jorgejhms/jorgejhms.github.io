@@ -136,9 +136,17 @@ p {
   border-top: 5px solid;
 }
 
+ul {
+  font-size: 0.9em;
+}
 /*Responsive*/
 
 @media (max-width: 850px) {
+  body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   header {
     gap: 5px;
@@ -151,6 +159,10 @@ p {
     width: 90vw;
   }
   
+  main {
+    margin-top: auto;
+  }
+  
   .logo {
     font-size: 20px
   }
@@ -161,7 +173,7 @@ p {
     border: 0;
   }
   
-  h2 {
+  .subtitulo>h2 {
     font-size: 18px;
     writing-mode: horizontal-tb;
     margin-top: 0.5em;
@@ -180,14 +192,22 @@ p {
 }
 
 @media (max-width: 650px) {
+  body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   header {
     display: flex;
     flex-flow: column;
-    margin-left: 1em;
-    margin-right: 1em;
     transform: rotate(0);
     width: auto;
   }
+  
+  main {
+    margin-top: auto;
+  } 
   
   .logo {
     font-size: 13px;
@@ -201,7 +221,7 @@ p {
     letter-spacing: 0.1em;
   }
   
-  h2 {
+  .subtitulo>h2 {
     font-size: 18px;
     text-align: center;
     writing-mode: horizontal-tb;
