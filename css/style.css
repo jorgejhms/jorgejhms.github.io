@@ -147,12 +147,14 @@ article {
 }
 
 .contenido {
-  text-align: justify;
+  /*! text-align: justify; */
   grid-column: 2;
   grid-row: 3;
   border-left: 5px solid;
   padding-left: 3em;
   padding-bottom: 2em;
+  line-height: 1.5;
+  font-family: 'Merriweather', serif;
 }
 
 .contenido>p:first-child{
@@ -162,7 +164,7 @@ article {
 .contenido>p:first-child:first-letter{
   -webkit-initial-letter: 4;
   initial-letter:4;
-  color: red;
+  margin-rigth: 0.5em;
 }
 
 .contenido>img {
