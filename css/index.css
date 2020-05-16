@@ -6,6 +6,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 header {
   display: grid; /* Define el grid */
   gap: 1em;
@@ -17,6 +18,13 @@ header {
   margin-top: 7em;  
   width: 600px;
 }
+
+main {
+  margin-top: 9em;
+  border-top: 5px solid;
+}
+
+/* Propiedades de links */
 a {
   color:#e65145;
 }
@@ -29,16 +37,13 @@ a:visited {
   color:blueviolet;
 }
 
+
 h2, h3 {
   font-family: Jost;
   text-transform: uppercase;
   color: #e65145;
 }
-main {
-  margin-top: 9em;
-  border-top: 5px solid;
-  width: ;
-}
+
 
 main > h3 {
   padding-left: 1em
@@ -80,7 +85,6 @@ p {
 .subtitulo{
   grid-column: 3;
   grid-row: 2 / -2;
-
 }
 
 .laboratorio{
@@ -139,7 +143,7 @@ p {
 ul {
   font-size: 0.9em;
 }
-/*Responsive*/
+/* Responsive */
 
 @media (max-width: 850px) {
   body {
