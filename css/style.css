@@ -4,7 +4,7 @@ body {
   background-color: antiquewhite;
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
-  width: 80vw;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,16 +91,16 @@ footer {
 article {
   display: grid;
   gap: 1em;
-  grid-template-columns: auto 60ch 1em;
+  grid-template-columns: 1fr auto 60ch 2fr 1fr 1em;
   grid-template-rows: auto auto auto;
   margin-top:-3em;
-  max-width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+  /*! max-width: 50vw; */
+  /*! margin-left: 1em; */
+  /*! margin-right: 1em; */
 }
 
 .titulo {
-  grid-column: span 3;
+  grid-column: 2 / 5;
   text-align: left;
   font-family: Jost;
   margin-bottom: 1em;
@@ -111,20 +111,22 @@ article {
   background-color:black;
   padding-left: 1em;
   margin-bottom: 0.5em;
+  font-size: 40px;
+  letter-spacing: 0.2em;
 }
 
 .meta {
-  grid-column: 1;
+  grid-column: 2;
   grid-row:2;
   font-family: "Jost";
   text-align: center;
   font-weight: 500;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   width:min-content;
   z-index: 10;
-  font-size: small;
+  /*! font-size: small; */
   place-self:  center center;
-  /*! white-space: nowrap; */
+  white-space: nowrap;
 }
 
 .triangle-down {
@@ -134,7 +136,7 @@ article {
   border-right: 50px solid transparent;
   border-top: 100px solid #e65145;
   grid-row:2;
-  grid-column: 1;
+  grid-column: 2;
   z-index: -1;
   transform: rotate(-45deg);
   place-self: center center;
@@ -148,14 +150,21 @@ article {
 
 .contenido {
   /*! text-align: justify; */
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 3;
   border-left: 5px solid;
   padding-left: 3em;
   padding-bottom: 2em;
-  line-height: 1.5;
   font-family: 'Merriweather', serif;
+  font-weight: 300;
+  line-height: 1.7em;
+  font-size:20px;
+  padding-right: 1em
 }
+
+.contenido strong{
+  font-weight: 700;
+} 
 
 .contenido>p:first-child{
   margin-top: 0;
