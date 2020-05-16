@@ -124,6 +124,7 @@ article {
   z-index: 10;
   font-size: small;
   place-self:  center center;
+  /*! white-space: nowrap; */
 }
 
 .triangle-down {
@@ -135,7 +136,8 @@ article {
   grid-row:2;
   grid-column: 1;
   z-index: -1;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
+  place-self: center center;
 }
   
 .meta > p {
@@ -149,11 +151,18 @@ article {
   grid-column: 2;
   grid-row: 3;
   border-left: 5px solid;
-  padding-left: 1em;
+  padding-left: 3em;
+  padding-bottom: 2em;
 }
 
 .contenido>p:first-child{
   margin-top: 0;
+}
+
+.contenido>p:first-child:first-letter{
+  -webkit-initial-letter: 4;
+  initial-letter:4;
+  color: red;
 }
 
 .contenido>img {
