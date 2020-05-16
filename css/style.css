@@ -127,6 +127,9 @@ article {
   /*! font-size: small; */
   place-self:  center center;
   white-space: nowrap;
+  border-top:5px solid;
+  border-left: 5px solid;
+  padding-left: 0.5em;
 }
 
 .triangle-down {
@@ -140,12 +143,6 @@ article {
   z-index: -1;
   transform: rotate(-45deg);
   place-self: center center;
-}
-  
-.meta > p {
-  border-top:5px solid;
-  border-left: 5px solid;
-  padding-left: 1em;
 }
 
 .contenido {
@@ -177,7 +174,8 @@ article {
 }
 
 .contenido>img {
-  width: calc(100% - 10px);
+  min-width: calc(100% - 10px);
+  width: 60vw;
   height: auto;
   border: 5px solid;
 }
