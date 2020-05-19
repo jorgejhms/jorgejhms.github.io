@@ -125,9 +125,37 @@ article {
   grid-row: 2;
   list-style: none;
 }
+.blog>ul>li>h2 {
+  font-size: 20px;
+  text-align: center;
+}
 
 .blog_galerie {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25ch,1fr));
+  grid-template-rows: auto 1fr;
+  grid-auto-rows: max-content;
+  gap: 1em;
+  max-width: 70vw;
+}
+
+.blog_item {
+  display: grid;
+  font-size: 15px;
+  text-align: justify;
+  border: 0.1px solid gray;
+  padding: 1.5em;
+  /*! white-space: ; */
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  background-color: #eaeaea;
+  animation-name: grow;
+  transition: transform 0.025s ease-in-out;
+}
+
+.blog_item:hover{
+  transform: scale(1.05);
+  border-color: black;
 }
 
 .titulo {
@@ -218,3 +246,5 @@ article {
   padding-bottom: 0.5em;
   margin-top: 0;
 }
+
+
