@@ -6,6 +6,7 @@ body {
 
 header{
   height: 75vh;
+  min-height: 750px;
   margin-top: 25vh;
   width: 60vw;
   margin-left: auto;
@@ -28,6 +29,7 @@ main {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 /* Propiedades de links */
@@ -149,6 +151,42 @@ p {
 ul {
   font-size: 0.9em;
 }
+
+.lab_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25ch,1fr));
+  grid-template-rows: auto 1fr;
+  grid-auto-rows: max-content;
+  gap: 1.5em;
+  /*! max-width: 70vw; */
+  list-style: none;
+  padding-left: 0;
+}
+
+.lab_item {
+  display: grid;
+  box-shadow: 0px 0px 15px 1px rgba(128,128,128,0.4);
+  padding: 1em;
+  text-align: center;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  background-color:white;
+  transition: transform 100ms cubic-bezier(.55,.06,.68,.19);
+}
+
+.lab_item:hover{
+  transform: scale(1.02);
+  border-color: black;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
 /* Responsive */
 
 @media (max-width: 850px) {
@@ -164,6 +202,7 @@ ul {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  min-height: auto;
 }
   
   .tschichold {
@@ -220,6 +259,7 @@ ul {
   height: auto;
   margin-top: 0;
   width: auto;
+  min-height: auto;
 }
   
   .tschichold {
