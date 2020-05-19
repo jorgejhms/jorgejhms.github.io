@@ -41,15 +41,26 @@ a:hover{
   border-bottom: 5px solid;
 }
 
+h1 {
+    color: #e65145;
+    /*background-color: black;*/
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+}
+
 .logo {
   margin-top:0;
   margin-bottom:0;
 }
+
 .logo > a {
   text-decoration: none;
   font-size: 36px;
   font-weight: 600;
 }
+
 nav {
   font-family: Jost;
   font-weight: 500;
@@ -65,10 +76,12 @@ nav >ul {
   text-align: right;
   text-decoration: none;
 }
+
 nav>ul>li{
   border-top: 5px solid;
   padding-right: 1em;
 }
+
 nav>ul>li:last-child{
   border-bottom: 5px solid;
 }
@@ -94,11 +107,24 @@ article {
   grid-template-columns: 1fr auto 60ch 2fr 1fr 1em;
   grid-template-rows: auto auto auto;
   margin-top:-3em;
-  /*! max-width: 50vw; */
-  /*! margin-left: 1em; */
-  /*! margin-right: 1em; */
 }
 
+.blog{
+  display: grid;
+  grid-template-columns:  1em 1fr 80ch 1fr 1em;
+}
+
+.blog > h1{
+  grid-column: span 3;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.blog>ul {
+  grid-column: 3;
+  grid-row: 2;
+  list-style: none;
+}
 .titulo {
   grid-column: 2 / 5;
   text-align: left;
