@@ -2,13 +2,14 @@
 body {
   font-family: 'Roboto Slab', serif;
   background-color:antiquewhite;
-  width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 header{
-  height: 100vh;
+  height: 75vh;
+  margin-top: 25vh;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tschichold {
@@ -19,13 +20,14 @@ header{
   transform: rotate(-45deg);
   margin-right: auto;
   margin-left: auto;
-  margin-top: 7em;  
   width: 600px;
 }
 
 main {
-  margin-top: 9em;
   border-top: 5px solid;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Propiedades de links */
@@ -156,7 +158,15 @@ ul {
     margin-right: auto;
   }
   
-  header {
+  header{
+  height: auto;
+  margin-top: 0;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  .tschichold {
     gap: 5px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto auto;
@@ -206,7 +216,13 @@ ul {
     margin-right: auto;
   }
   
-  header {
+  header{
+  height: auto;
+  margin-top: 0;
+  width: auto;
+}
+  
+  .tschichold {
     display: flex;
     flex-flow: column;
     transform: rotate(0);
