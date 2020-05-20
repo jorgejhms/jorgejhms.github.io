@@ -79,19 +79,16 @@ p {
 .logo {
   grid-column: 1/5;
   place-self: center center;
+  letter-spacing: 30px;
   font-family: 'Jost', sans-serif;
-  font-size: 25px;
   text-transform: uppercase;
-  letter-spacing: 1.2em;
   width: 100%;
   text-align: center;
-}
-
-.logo>h1{
   margin: 0;
   border-top: 5px solid;
   border-bottom: 5px solid;
-  width: 100%
+  weight: 700px;
+  font-size: 50px;
 }
 
 .subtitulo{
