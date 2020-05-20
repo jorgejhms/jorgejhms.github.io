@@ -1,4 +1,6 @@
-/* Opciones generales */
+/* Opciones generales
+======================*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +19,45 @@ header{
   margin-right: auto;
 }
 
+main {
+  border-top: 5px solid;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Diseño general
+==================*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Jost;
+  text-transform: uppercase;
+  color: #e65145;
+}
+
+a {
+  color:#e65145;
+  text-decoration: none;
+}
+
+a:hover{
+  color:red;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:blueviolet;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Grid Principal
+=================*/
+
 .tschichold {
   display: grid; /* Define el grid */
   gap: 1em;
@@ -27,54 +68,6 @@ header{
   margin-left: auto;
   width: 600px;
 }
-
-main {
-  border-top: 5px solid;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-
-/* Propiedades de links */
-a {
-  color:#e65145;
-}
-
-a:hover{
-  color:red;
-}
-
-a:visited {
-  color:blueviolet;
-}
-
-
-h2, h3 {
-  font-family: Jost;
-  text-transform: uppercase;
-  color: #e65145;
-}
-
-
-main > h3 {
-  padding-left: 1em
-}
-.subtitulo > h2 {
-  writing-mode: vertical-lr;
-  margin:0;
-}
-
-h3 {
-  color: #e65145;
-  letter-spacing: 0.150em;
-  background-color: black;
-}
-
-p {
-  font-size: 0.9em;
-  text-align:justify;
-} 
 
 .logo {
   grid-column: 1/5;
@@ -89,11 +82,14 @@ p {
   border-bottom: 5px solid;
   weight: 700px;
   font-size: 50px;
+  color: black;
 }
 
 .subtitulo{
   grid-column: 3;
   grid-row: 2 / -2;
+  writing-mode: vertical-lr;
+  margin:0;
 }
 
 .laboratorio{
@@ -101,14 +97,17 @@ p {
   grid-row: 3;
 }
 
-.laboratorio >h3 {
-  background-color: black;
-}
-
-.laboratorio > p {
+.laboratorio  p {
   border-bottom: 5px solid;
   border-top: 5px solid;
 }
+
+.tschichold h3 {
+  color: #e65145;
+  letter-spacing: 0.150em;
+  background-color: black;
+}
+
 .blog {
   grid-column: -2;
   grid-row: 2 / -1;
@@ -118,26 +117,12 @@ p {
   padding-right: 0.5em;
 }
 
-.blog>h3 {
-  margin-top: 0;
+.blog h3 {
+  margin-top: 0; /* Mantiene alineado el titulo con el borde */
 }
 
-.blog>h3>a {
+.tschichold a {
   color: #e65145;
-  text-decoration: none;
-}
-
-.blog>h3>a:hover {
-  text-decoration: underline;
-}
-
-.laboratorio>h3>a {
-  color: #e65145;
-  text-decoration: none;
-}
-
-.laboratorio>h3>a:hover {
-  text-decoration: underline;
 }
 
 .copyright {
@@ -149,9 +134,8 @@ p {
   border-top: 5px solid;
 }
 
-ul {
-  font-size: 0.9em;
-}
+/* Grid Secundario
+================== */
 
 .lab_grid{
   display: grid;
@@ -178,27 +162,23 @@ ul {
 }
 
 .lab_item:hover{
-  transform: scale(1.02);
+  transform: scale(1.05);
   border-color: black;
 }
 
-img{
-  display: block;
-  width: 100%;
-  height: auto;
-  
-}
-/* Responsive */
+
+/* Responsive 
+============= */
 
 @media (max-width: 850px) {
   body {
-    width: 90%;
+    width: 98vw;
     margin-left: auto;
     margin-right: auto;
   }
   
   header{
-  height: auto;
+  height: 100vh;
   margin-top: 0;
   width: auto;
   margin-left: auto;
@@ -219,23 +199,22 @@ img{
   
   main {
     margin-top: auto;
+    width: 90vw;
   }
   
   .logo {
-    font-size: 20px
+    font-size: 50px;
   }
   
   .subtitulo {
     grid-column: 1 / 3;
     grid-row: 2;
     border: 0;
-  }
-  
-  .subtitulo>h2 {
-    font-size: 18px;
+    font-size: 28px;
     writing-mode: horizontal-tb;
     margin-top: 0.5em;
   }
+  
   
   .laboratorio {
     grid-row: 3;
@@ -244,8 +223,9 @@ img{
   .laboratorio > p{
     border-top: 0;
   }
+  
   h3{
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -257,7 +237,7 @@ img{
   }
   
   header{
-  height: auto;
+  height: 100vh;
   margin-top: 0;
   width: auto;
   min-height: auto;
@@ -275,10 +255,11 @@ img{
   } 
   
   .logo {
-    font-size: 13px;
+    font-size: 30px;
     height: min-content;
     transform: rotate(0);
     text-align: center;
+    letter-spacing: 0.5em
   }
  
   .subtitulo{
@@ -286,8 +267,8 @@ img{
     letter-spacing: 0.1em;
   }
   
-  .subtitulo>h2 {
-    font-size: 18px;
+  .subtitulo {
+    font-size: 20px;
     text-align: center;
     writing-mode: horizontal-tb;
     border: 0px;
