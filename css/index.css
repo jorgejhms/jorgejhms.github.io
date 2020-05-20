@@ -1,4 +1,8 @@
 /* Opciones generales */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Slab', serif;
   background-color:antiquewhite;
